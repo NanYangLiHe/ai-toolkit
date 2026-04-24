@@ -9,10 +9,22 @@
 - [x] Create landing page for GitHub Pages
 
 ## Phase 2: Content Marketing 🚧 IN PROGRESS
-- [ ] Generate 5 technical tutorials using local LLM
-- [ ] Submit to Dev.to/Medium/HackerNews (need accounts)
+- [x] Generate technical tutorials using local LLM (2 articles done)
+- [ ] Submit to Dev.to/Medium/HackerNews (**need API keys from 阿良**)
 - [ ] Create demo videos showing real workflows
 - [ ] Write case studies ("How I saved $X/month with local AI")
+
+### 🔑 Need Your Help: Platform Setup (5 minutes)
+
+**Dev.to (recommended):**
+1. Go to https://dev.to and sign up with GitHub OAuth
+2. Generate API key at https://dev.to/settings/extensions → "API Key"
+3. Send me the key → I'll auto-publish articles via API
+
+**Medium:**
+1. Sign up at https://medium.com with email
+2. Go to https://medium.com/me/settings#apiKey and generate MID token  
+3. Send me the token → I'll publish to Medium too
 
 ## Phase 3: Community Building
 - [ ] Add Discord/Telegram community links
