@@ -1,6 +1,16 @@
 # 🤖 AI Toolkit
 
-**Free & Open Source AI Automation Tools for Developers**
+<div align="center">
+  <img src="https://img.shields.io/github/stars/NanYangLiHe/ai-toolkit?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/forks/NanYangLiHe/ai-toolkit?style=flat-square" alt="Forks">
+  <img src="https://img.shields.io/github/issues/NanYangLiHe/ai-toolkit?style=flat-square" alt="Issues">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="MIT License">
+  <img src="https://img.shields.io/badge/python-3.8%2B-green.svg?style=flat-square" alt="Python 3.8+">
+  <br><br>
+  <strong>Free & Open Source AI Automation Tools for Developers</strong>
+</div>
+
+A collection of practical, production-ready scripts and tools powered by local LLMs. No API keys required, no cloud dependencies — run everything on your own machine.
 
 A collection of practical, production-ready scripts and tools powered by local LLMs. No API keys required, no cloud dependencies — run everything on your own machine.
 
