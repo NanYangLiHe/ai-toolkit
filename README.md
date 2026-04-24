@@ -12,7 +12,7 @@
 
 A collection of practical, production-ready scripts and tools powered by local LLMs. No API keys required, no cloud dependencies — run everything on your own machine.
 
-A collection of practical, production-ready scripts and tools powered by local LLMs. No API keys required, no cloud dependencies — run everything on your own machine.
+📝 **Blog:** [AI Toolkit Guides](https://nanyanglihe.github.io/ai-toolkit/) — 9+ articles on prompt engineering, automation, DeFi & more
 
 ## ✨ Features
 
