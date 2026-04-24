@@ -24,6 +24,7 @@ A collection of practical, production-ready scripts and tools powered by local L
 | 🌐 Web Scraper | Intelligently scrape websites and extract key information | ✅ Ready |
 | 🔍 SEO Optimizer | Analyze & optimize content for search engines | ✅ New! |
 | 🐦 Twitter Bot | Auto-post articles to drive traffic | ✅ New! |
+| 🌍 AI Translator | Translate content between languages (en↔zh-CN, etc.) | ✅ New! |
 
 ## 🚀 Quick Start
 
