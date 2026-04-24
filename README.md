@@ -25,58 +25,26 @@ A collection of practical, production-ready scripts and tools powered by local L
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Python 3.8+ or Node.js 18+
-- Local LLM (Ollama, LM Studio, or any OpenAI-compatible API)
-
-### Installation
-
+### Installation (30 seconds)
 ```bash
-# Clone the repo
 git clone https://github.com/NanYangLiHe/ai-toolkit.git
-cd ai-toolkit
-
-# Install dependencies
-pip install -r requirements.txt
-# OR for Node.js tools:
-npm install
-
-# Configure your local LLM endpoint
-cp .env.example .env
-# Edit .env with your settings
+cd ai-toolkit && pip install -r requirements.txt
+cp .env.example .env  # Configure your local LLM endpoint
 ```
 
-### Usage Examples
-
-#### Generate Content
+### First Run
 ```bash
-python scripts/auto_writer.py --topic "AI in 2025" --language zh-CN
+# Generate a technical article
+python scripts/auto_writer.py --topic "Local AI Workflows" --language en-US
+
+# Review your code locally
+python scripts/code_review.py --file my_script.py
+
+# Extract data from messy text
+python scripts/data_parser.py --input notes.txt --format json --schema invoice
 ```
 
-#### Code Review
-```bash
-python scripts/code_review.py --target ./your_project/
-```
-
-#### Data Extraction (JSON/CSV)
-```bash
-# Parse a single file
-python scripts/data_parser.py --input invoice.txt --format json --schema invoice
-
-# Batch parse all files in directory
-python scripts/data_parser.py --input ./documents/ --format csv
-```
-
-#### Intelligent Web Scraping
-```bash
-# Scrape a single URL
-python scripts/web_scraper.py --url https://example.com
-
-# Scrape multiple URLs from file
-python scripts/web_scraper.py --urls targets.txt --output results.json
-```
-
-## 📖 Documentation
+📖 See [examples/](examples/) for real-world use cases!
 
 See [docs/](docs/) for detailed guides on each tool.
 
