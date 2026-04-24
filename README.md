@@ -12,7 +12,7 @@
 
 A collection of practical, production-ready scripts and tools powered by local LLMs. No API keys required, no cloud dependencies — run everything on your own machine.
 
-A collection of practical, production-ready scripts and tools powered by local LLMs. No API keys required, no cloud dependencies — run everything on your own machine.
+📝 **Blog:** [AI Toolkit Guides](https://nanyanglihe.github.io/ai-toolkit/) — 9+ articles on prompt engineering, automation, DeFi & more
 
 ## ✨ Features
 
@@ -56,7 +56,7 @@ See [docs/](docs/) for detailed guides on each tool.
 If you find this toolkit useful, consider supporting:
 
 - ⭐ Star this repo (helps more people discover it!)
-- ☕ Buy me a coffee: https://buymeacoffee.com/lihuai
+- 🌐 [Donate Page](https://nanyanglihe.github.io/ai-toolkit/donate.html) — Alipay + ETH wallets
 - 💬 Share with your network
 
 **ETH Wallet:** `0x99F42Cf98e928785FC2484304Be368EFaD9787Af`

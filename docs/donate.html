@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support AI Toolkit - Donate & Sponsor</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(180deg, #10b981 0%, #f8f9fa 300px); }
+    .hero { text-align: center; padding: 80px 20px 60px; color: white; }
+    .hero h1 { font-size: 2.5em; margin-bottom: 15px; }
+    .hero p { font-size: 1.2em; opacity: 0.9; max-width: 700px; margin: 0 auto 20px; }
+    .container { max-width: 800px; margin: -30px auto 40px; padding: 0 20px; }
+    .donate-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); margin-bottom: 25px; }
+    .donate-card h2 { color: #10b981; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+    .wallet-box { background: #f3f4f6; padding: 15px; border-radius: 8px; font-family: monospace; word-break: break-all; margin: 10px 0; position: relative; cursor: pointer; transition: background 0.2s; }
+    .wallet-box:hover { background: #e5e7eb; }
+    .copy-btn { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: #10b981; color: white; border: none; padding: 5px 12px; border-radius: 4px; cursor: pointer; font-size: 0.8em; }
+    .qr-placeholder { text-align: center; padding: 30px; background: #f9fafb; border-radius: 8px; margin-top: 15px; color: #6b7280; }
+    .progress-bar { height: 8px; background: #e5e7eb; border-radius: 4px; overflow: hidden; margin: 15px 0; }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, #10b981, #34d399); width: 3.5%; transition: width 0.5s ease; }
+    footer { text-align: center; padding: 40px 20px; color: #9ca3af; font-size: 0.9em; }
+    footer a { color: #10b981; text-decoration: none; }
+    .back-link { display: inline-block; background: white; color: #10b981; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-bottom: 25px; transition: transform 0.2s; }
+    .back-link:hover { transform: scale(1.05); }
+    .milestone { display: flex; align-items: center; gap: 10px; padding: 10px; background: #ecfdf5; border-radius: 8px; margin-top: 10px; font-size: 0.9em; color: #065f46; }
+    .milestone-icon { font-size: 1.2em; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>💰 Support AI Toolkit</h1>
+  <p>Your support helps keep this project alive and growing. Every contribution counts!</p>
+  <a href="index.html" class="back-link">← Back to Blog</a>
+</div>
+
+<div class="container">
+
+<!-- Progress -->
+<div style="background:white; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:25px;">
+  <h3>Current Goal: $100 → Build AI Revenue Engine</h3>
+  <div class="progress-bar">
+    <div class="progress-fill" style="width: 3.5%;"></div>
+  </div>
+  <p style="color:#6b7280; font-size:0.9em;">Current: $10.03 | Target: $100.00 (3.5%)</p>
+  
+  <div class="milestone">
+    <span class="milestone-icon">✅</span>
+    <span>$10 — Project launched, blog live, daily articles running</span>
+  </div>
+  <div class="milestone">
+    <span class="milestone-icon">🔜</span>
+    <span>$50 — Expand to Medium/Dev.to cross-publishing</span>
+  </div>
+  <div class="milestone">
+    <span class="milestone-icon">⭐</span>
+    <span>$100 — Full-time content engine + video tutorials</span>
+  </div>
+</div>
+
+<!-- Alipay -->
+<div class="donate-card">
+  <h2>🇨🇳 Alipay (支付宝)</h2>
+  <p style="color:#6b7280; margin-bottom:15px;">Fastest way to support from China</p>
+  
+  <div class="wallet-box" onclick="copyToClipboard('15660666644')">
+    15660666644
+    <button class="copy-btn">Copy</button>
+  </div>
+  
+  <div class="qr-placeholder">
+    📱 Open Alipay → Transfer to: <strong>15660666644</strong><br>
+    <span style="font-size:0.85em;">(Ask user for QR code image)</span>
+  </div>
+</div>
+
+<!-- ETH Wallet -->
+<div class="donate-card">
+  <h2>🌍 Ethereum (ERC20)</h2>
+  <p style="color:#6b7280; margin-bottom:15px;">Global crypto donations welcome</p>
+  
+  <div class="wallet-box" onclick="copyToClipboard('0x99F42Cf98e928785FC2484304Be368EFaD9787Af')">
+    0x99F42Cf98e928785FC2484304Be368EFaD9787Af
+    <button class="copy-btn">Copy</button>
+  </div>
+  
+  <p style="color:#6b7280; font-size:0.85em; margin-top:10px;">
+    Current Balance: ~$10.03 (ETH + USDT)<br>
+    Networks supported: ERC20, Arbitrum, Polygon
+  </p>
+</div>
+
+<!-- GitHub Sponsors -->
+<div class="donate-card">
+  <h2>⭐ Star on GitHub</h2>
+  <p style="color:#6b7280; margin-bottom:15px;">Free support that helps the project grow</p>
+  
+  <a href="https://github.com/NanYangLiHe/ai-toolkit" target="_blank" 
+     style="display:inline-block; background:#333; color:white; padding:12px 24px; border-radius:8px; text-decoration:none; font-weight:bold;">
+    ⭐ Star ai-toolkit
+  </a>
+</div>
+
+<!-- What Your Support Does -->
+<div class="donate-card">
+  <h2>📊 Where Your Money Goes</h2>
+  
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:15px; margin-top:15px;">
+    <div style="background:#ecfdf5; padding:15px; border-radius:8px;">
+      <h4 style="color:#065f46; margin-bottom:8px;">💻 Infrastructure</h4>
+      <p style="font-size:0.9em; color:#065f46;">Local LLM hosting, domain names, and compute costs</p>
+    </div>
+    <div style="background:#ecfdf5; padding:15px; border-radius:8px;">
+      <h4 style="color:#065f46; margin-bottom:8px;">📝 Content</h4>
+      <p style="font-size:0.9em; color:#065f46;">Articles, tutorials, and educational materials</p>
+    </div>
+    <div style="background:#ecfdf5; padding:15px; border-radius:8px;">
+      <h4 style="color:#065f46; margin-bottom:8px;">🛠️ Tools</h4>
+      <p style="font-size:0.9em; color:#065f46;">New automation scripts and open-source utilities</p>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="donate-card">
+  <h2>❓ Frequently Asked Questions</h2>
+  
+  <div style="margin-top:15px;">
+    <h4 style="color:#374151; margin-bottom:8px;">How often do you publish?</h4>
+    <p style="color:#6b7280; font-size:0.9em;">Daily at 8:00 AM CST (Asia/Shanghai). Automated but quality-checked.</p>
+    
+    <h4 style="color:#374151; margin-top:12px; margin-bottom:8px;">Can I request topics?</h4>
+    <p style="color:#6b7280; font-size:0.9em;">Yes! Open an issue on GitHub or email lihe19900610@gmail.com</p>
+    
+    <h4 style="color:#374151; margin-top:12px; margin-bottom:8px;">Is this project free?</h4>
+    <p style="color:#6b7280; font-size:0.9em;">All tools and articles are 100% free (MIT License). Donations keep the engine running.</p>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  <p>Built with ❤️ by <a href="https://github.com/NanYangLiHe" target="_blank">李槐 (Li Huai)</a></p>
+  <p style="margin-top:8px;">📚 <a href="index.html">Blog</a> · 🛠️ <a href="https://github.com/NanYangLiHe/ai-toolkit#-quick-start" target="_blank">Quick Start</a> · 💬 Contact</p>
+  <p style="margin-top:15px;color:#d1d5db;font-size:0.85em;">Transparency: All donations are public and tracked in monthly reports.</p>
+</footer>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target.closest('.copy-btn');
+    if (btn) {
+      const original = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = original, 2000);
+    }
+  });
+}
+</script>
+
+</body>
+</html>

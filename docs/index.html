@@ -3,18 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Toolkit Blog - Automate Everything with Local AI</title>
+  <title>AI Toolkit Blog - Local AI Automation & Guides</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(180deg, #667eea 0%, #f5f5f5 400px); }
-    .container { max-width: 900px; margin: 0 auto; padding: 20px; color: white; }
-    header { text-align: center; padding: 80px 20px 60px; }
-    header h1 { font-size: 3em; margin-bottom: 15px; }
-    header p { font-size: 1.3em; opacity: 0.9; max-width: 700px; margin: 0 auto; }
-    .cta-btn { display: inline-block; background: #ffa500; color: white; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; margin-top: 25px; transition: transform 0.2s, box-shadow 0.2s; }
-    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,165,0,0.4); }
-    
-    .stats-bar { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; margin: -30px auto 40px; max-width: 900px; position: relative; z-index: 10; }
-    .stat-item { text-align: center; padding: 15px; background: #f8f9fa; border-radius: 8px; color: #333; }
-    .stat-value { font-size: 2.2em; font-weight: bold; color: #667eea; }
-    .stat-label { font-size: 0.85em; color: #666; margin-top: 5px; text-transform: uppercase; letter-spacing: 1px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(180deg, #4f46e5 0%, #f8f9fa 300px); }
+    .hero { text-align: center; padding: 80px 20px 60px; color: white; }
+    .hero h1 { font-size: 2.8em; margin-bottom: 15px; }
+    .hero p { font-size: 1.3em; opacity: 0.9; max-width: 700px; margin: 0 auto 25px; }
+    .stats { display: flex; justify-content: center; gap: 30px; margin-top: 20px; }
+    .stat { background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 20px; backdrop-filter: blur(4px); }
+    .container { max-width: 900px; margin: -30px auto 40px; padding: 0 20px; }
+    article { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 25px; transition: transform 0.2s, box-shadow 0.2s; }
+    article:hover { transform: translateY(-3px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+    .tag { display: inline-block; background: #eef2ff; color: #4f46e5; padding: 3px 12px; border-radius: 20px; font-size: 0.8em; margin-right: 8px; font-weight: 600; }
+    .tag-green { background: #ecfdf5; color: #059669; }
+    .tag-orange { background: #fff7ed; color: #ea580c; }
+    article h2 { margin: 10px 0 8px; font-size: 1.3em; }
+    article p { color: #6b7280; margin-bottom: 12px; font-size: 0.95em; }
+    .read-btn { display: inline-block; background: #4f46e5; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background 0.2s; }
+    .read-btn:hover { background: #3730a3; }
+    footer { text-align: center; padding: 40px 20px; color: #9ca3af; font-size: 0.9em; }
+    footer a { color: #4f46e5; text-decoration: none; }
+    .cta-top { display: inline-block; background: white; color: #4f46e5; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-bottom: 15px; transition: transform 0.2s; }
+    .cta-top:hover { transform: scale(1.05); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🤖 AI Toolkit Blog</h1>
+  <p>Practical guides for local LLM automation, prompt engineering, and building with open-source AI — zero API costs.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit" target="_blank" class="cta-top">⭐ Star on GitHub</a>
+  <div class="stats">
+    <div class="stat">📝 9 Articles</div>
+    <div class="stat">💰 $0 Cost</div>
+    <div class="stat">🌍 Local-First</div>
+  </div>
+</div>
+
+<div class="container">
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">Prompt Engineering</span><span class="tag-orange">2026 Guide</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/llm-prompt-engineering-2026.md" target="_blank" style="color:#333;text-decoration:none;">The 2026 Guide to LLM Prompt Engineering: Stop Wasting Tokens</a></h2>
+  <p>Chain-of-thought vs structured output, few-shot exemplars, temperature settings that actually work. Tested across Qwen3.6-27B and GPT-4o with real benchmarks.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/llm-prompt-engineering-2026.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">Cross-Chain</span><span class="tag">DeFi</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/cross-chain-bridge-guide.md" target="_blank" style="color:#333;text-decoration:none;">Save 95% on Gas: Cross-Chain Bridge Strategy Guide</a></h2>
+  <p>How to move your $10 from Ethereum mainnet to Arbitrum or Polygon for L2 gas savings. Complete walkthrough with real transaction hashes.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/cross-chain-bridge-guide.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">Twitter</span><span class="tag">Growth</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/twitter-bot-automation.md" target="_blank" style="color:#333;text-decoration:none;">Twitter Bot Automation: From 0 to Viral Threads</a></h2>
+  <p>The formula for AI-generated viral threads, growth metrics that matter, and how to build an automated content pipeline.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/twitter-bot-automation.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">DeFi</span><span class="tag">Automation</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/defi-automation-guide.md" target="_blank" style="color:#333;text-decoration:none;">DeFi Automation on a $10 Budget: Real Wallet Experiments</a></h2>
+  <p>Wrap ETH, approve tokens, swap on Uniswap — all logged with real transaction hashes. Learn what works and what doesn't when you start small.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/defi-automation-guide.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">SEO</span><span class="tag">Growth</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/seo-guide-developers.md" target="_blank" style="color:#333;text-decoration:none;">From Zero to 10K Monthly Views: SEO for Developers' GitHub Projects</a></h2>
+  <p>How to get your open-source project discovered through search. Keyword research, content strategy, and the technical setup that matters.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/seo-guide-developers.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">Tutorial</span><span class="tag">Pipeline</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/tutorial-series-01.md" target="_blank" style="color:#333;text-decoration:none;">Build an Automated Content Pipeline: Zero-Cost AI Writing Engine</a></h2>
+  <p>Step-by-step tutorial for setting up a fully automated content generation pipeline using local LLMs. Includes the complete tool chain.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/tutorial-series-01.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">Case Study</span><span class="tag">Results</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/case-study-month1.md" target="_blank" style="color:#333;text-decoration:none;">Case Study: Month 1 Results — Building an AI Engine with $0 Budget</a></h2>
+  <p>Honest report on what happened when I tried to build a self-sustaining content engine. Wins, losses, and lessons learned.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/case-study-month1.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">Python</span><span class="tag">Automation</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/python-automation-workflow.md" target="_blank" style="color:#333;text-decoration:none;">Automate Everything: Python Workflow for AI-Powered Content Creation</a></h2>
+  <p>How to chain together local LLM calls, web scraping, and automated publishing into a single workflow. Includes full source code.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/python-automation-workflow.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+<article>
+  <span class="tag tag-green">NEW</span><span class="tag">Setup</span><span class="tag">Tutorial</span>
+  <h2><a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/local-ai-setup-guide.md" target="_blank" style="color:#333;text-decoration:none;">从零开始：用 OpenClaw + 本地 LLM 搭建你的 AI 工作流</a></h2>
+  <p>Complete setup guide for running a local AI assistant with OpenClaw + LM Studio. Zero API costs, full privacy.</p>
+  <a href="https://github.com/NanYangLiHe/ai-toolkit/blob/main/articles/local-ai-setup-guide.md" target="_blank" class="read-btn">Read →</a>
+</article>
+
+</div>
+
+<footer>
+  <p>Built with ❤️ by <a href="https://github.com/NanYangLiHe" target="_blank">李槐 (Li Huai)</a></p>
+  <p style="margin-top:8px;">📚 <a href="https://github.com/NanYangLiHe/ai-toolkit" target="_blank">GitHub Repo</a> · 🛠️ <a href="https://github.com/NanYangLiHe/ai-toolkit#-quick-start" target="_blank">Quick Start</a> · 💰 <a href="mailto:nanyanglihe@example.com">Sponsor</a></p>
+  <p style="margin-top:15px;color:#d1d5db;font-size:0.85em;">New articles published daily at 8:00 AM CST. Stay tuned!</p>
+</footer>
+
+</body>
+</html>
