@@ -22,6 +22,8 @@ A collection of practical, production-ready scripts and tools powered by local L
 | 🔧 Code Assistant | Local code review & refactoring automation | ✅ Ready |
 | 📊 Data Parser | Extract structured JSON/CSV from messy text (invoices, contacts) | ✅ Ready |
 | 🌐 Web Scraper | Intelligently scrape websites and extract key information | ✅ Ready |
+| 🔍 SEO Optimizer | Analyze & optimize content for search engines | ✅ New! |
+| 🐦 Twitter Bot | Auto-post articles to drive traffic | ✅ New! |
 
 ## 🚀 Quick Start
 
