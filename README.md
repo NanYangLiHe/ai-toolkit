@@ -10,8 +10,8 @@ A collection of practical, production-ready scripts and tools powered by local L
 |------|-------------|--------|
 | 📝 Auto-Writer | AI-powered content generator (articles, docs, translations) | ✅ Ready |
 | 🔧 Code Assistant | Local code review & refactoring automation | ✅ Ready |
-| 📊 Data Parser | Structured data extraction from unstructured text | ✅ Ready |
-| 🌐 Web Scraper | Intelligent web scraping with AI-powered parsing | 🚧 Beta |
+| 📊 Data Parser | Extract structured JSON/CSV from messy text (invoices, contacts) | ✅ Ready |
+| 🌐 Web Scraper | Intelligently scrape websites and extract key information | ✅ Ready |
 
 ## 🚀 Quick Start
 
@@ -48,9 +48,22 @@ python scripts/auto_writer.py --topic "AI in 2025" --language zh-CN
 python scripts/code_review.py --target ./your_project/
 ```
 
-#### Data Extraction
+#### Data Extraction (JSON/CSV)
 ```bash
-python scripts/data_parser.py --input data.txt --format json
+# Parse a single file
+python scripts/data_parser.py --input invoice.txt --format json --schema invoice
+
+# Batch parse all files in directory
+python scripts/data_parser.py --input ./documents/ --format csv
+```
+
+#### Intelligent Web Scraping
+```bash
+# Scrape a single URL
+python scripts/web_scraper.py --url https://example.com
+
+# Scrape multiple URLs from file
+python scripts/web_scraper.py --urls targets.txt --output results.json
 ```
 
 ## 📖 Documentation
