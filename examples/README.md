@@ -1,134 +1,144 @@
-# 📚 Examples & Use Cases
+# 📖 AI Toolkit Examples
 
-Real-world examples showing how to use AI Toolkit effectively.
+Real-world usage examples for each tool. Copy-paste ready!
 
-## Example 1: Technical Blog Post Generator
+---
 
-Generate a complete technical blog post with code examples:
+## 📝 Auto Writer
+
+### Generate a technical article
+```bash
+python scripts/auto_writer.py --topic "Python async programming" --length 800 --output articles/async-guide.md
+```
+
+### Batch generate content (daily workflow)
+```bash
+# Create multiple articles in one command
+for topic in AI automation devops python scripting machine learning; do
+    python scripts/auto_writer.py --topic "$topic" --output "articles/$topic.md"
+done
+echo "✅ Generated 6 articles!"
+```
+
+---
+
+## 🔧 Code Review
+
+### Quick code analysis
+```bash
+# Review a single file
+python scripts/code_review.py my_script.py
+
+# Output includes:
+# - Potential bugs detected
+# - Performance optimization suggestions  
+# - Best practices recommendations
+```
+
+### Full project review
+```bash
+# Review all Python files in directory
+find . -name "*.py" -exec python scripts/code_review.py {} \; > code-review-report.txt
+```
+
+---
+
+## 📊 Data Parser
+
+### Extract invoice data from text
+```bash
+python scripts/data_parser.py --input invoices.txt --format json --schema invoice
+
+# Output: structured JSON with fields like {date, amount, vendor, items...}
+```
+
+### Clean contact list
+```bash
+python scripts/data_parser.py --input contacts.csv --format json --schema person
+
+# Normalizes names, emails, phone numbers into consistent format
+```
+
+---
+
+## 🌐 Web Scraper
+
+### Extract key insights from webpage
+```bash
+python scripts/web_scraper.py --url "https://example.com/article" --extract "key points"
+
+# Returns: markdown summary of the page content
+```
+
+### Competitive analysis
+```bash
+# Scrape multiple competitor sites
+for url in "site1.com" "site2.com" "site3.com"; do
+    python scripts/web_scraper.py --url "$url" --extract "features, pricing" --output "competitors/$url.json"
+done
+```
+
+---
+
+## 🔍 SEO Optimizer
+
+### Analyze content for search engines
+```bash
+python scripts/seo_optimizer.py --file article.md --output seo-report.json
+
+# Report includes:
+# - Word count & readability score
+# - Keyword density analysis  
+# - SEO recommendations (0-100 score)
+```
+
+---
+
+## 🐦 Twitter Bot
+
+### Post articles automatically
+```bash
+python scripts/twitter_bot.py --article articles/my-post.md --dry-run
+
+# Preview tweets → remove --dry-run to actually post
+```
+
+---
+
+## 🌍 AI Translator
+
+### Translate content between languages
+```bash
+# English → Chinese (Simplified)
+python scripts/ai_translator.py --file article.md --from en --to zh-CN --output article-zh.md
+
+# Supports: en, zh-CN, ja, ko, fr, de, es...
+```
+
+---
+
+## 🚀 Complete Workflow Example
 
 ```bash
-# Step 1: Generate article outline
-python scripts/auto_writer.py \
-  --topic "Building Local AI Workflows" \
-  --language en-US > draft.md
+#!/bin/bash
+# daily-content.sh - Full content creation pipeline
 
-# Step 2: Translate to Chinese (if needed)
-python scripts/auto_writer.py \
-  --input draft.md \
-  --action translate \
-  --target-lang zh-CN
-```
+TOPIC="Local AI deployment"
 
-**Output:** Professional blog post ready for publication! 📝
+echo "📝 Generating article..."
+python scripts/auto_writer.py --topic "$TOPIC" --output articles/$TOPIC.md
 
----
+echo "🔍 Optimizing for SEO..."  
+python scripts/seo_optimizer.py --file articles/$TOPIC.md --output reports/$TOPIC-seo.json
 
-## Example 2: Code Quality Pipeline
+echo "🌍 Translating to Chinese..."
+python scripts/ai_translator.py --file articles/$TOPIC.md --from en --to zh-CN --output articles/$TOPIC-zh.md
 
-Automate code review before pushing to production:
-
-```bash
-# Review all Python files in your project
-python scripts/code_review.py --target ./my_project/
-
-# Focus on a specific file
-python scripts/code_review.py --file critical_module.py
-```
-
-**What you get:**
-- Bug detection with line numbers
-- Performance optimization suggestions  
-- Security vulnerability alerts
-- Refactoring recommendations
-
----
-
-## Example 3: Invoice Data Extraction
-
-Turn messy invoice PDFs into clean JSON data:
-
-```bash
-# Extract structured data from invoice text
-python scripts/data_parser.py \
-  --input invoice_text.txt \
-  --format json \
-  --schema invoice > invoice_data.json
-```
-
-**Sample Output:**
-```json
-{
-  "invoice_number": "INV-2024-1234",
-  "date": "2024-06-15",
-  "vendor": "Cloud Services Inc.",
-  "amount": "$1,250.00",
-  "items": [
-    {
-      "description": "Monthly cloud hosting",
-      "quantity": 1,
-      "unit_price": "$1,250.00"
-    }
-  ],
-  "tax": "$75.00",
-  "total": "$1,325.00"
-}
+echo "✅ Content ready! Review and publish manually or with content_publisher.py"
 ```
 
 ---
 
-## Example 4: Competitive Analysis Scraper
+💡 **Tip:** Combine these tools into automated workflows for maximum efficiency!
 
-Gather competitor information automatically:
-
-```bash
-# Create URL list file
-echo "https://competitor1.com/pricing" > competitors.txt
-echo "https://competitor2.com/features" >> competitors.txt
-
-# Scrape and analyze
-python scripts/web_scraper.py \
-  --urls competitors.txt \
-  --prompt "Extract pricing tiers, features, and target audience" \
-  --output analysis.json
-```
-
-**Perfect for:** Market research, competitive intelligence, content aggregation.
-
----
-
-## Example 5: Prompt Engineering Workshop
-
-Generate optimized prompts for specific tasks:
-
-```bash
-# Create a prompt for technical translation
-python scripts/prompt_generator.py \
-  --task "Translate API documentation from English to Chinese" \
-  --style professional > api_doc_prompt.md
-```
-
-**Use case:** Building prompt templates for consistent AI output quality.
-
----
-
-## Tips for Best Results
-
-### Hardware Optimization
-- **CPU-only:** Use quantized models (Q4_K_M or Q5_K_M)
-- **GPU available:** Try FP16 or GGUF with higher precision
-- **Memory constraints:** Start with 3B/7B parameter models
-
-### Prompt Quality
-- Be specific about desired output format
-- Include examples when possible
-- Specify tone and audience clearly
-- Break complex tasks into smaller steps
-
-### Automation Ideas
-- Set up GitHub Actions for automatic code reviews
-- Schedule weekly content generation scripts
-- Create custom CLI wrappers for your workflow
-
----
-
-*Have a cool use case? Share it in our [Discussions](https://github.com/NanYangLiHe/ai-toolkit/discussions)!* 🌿
+🌿 *Need help? Open an issue on [GitHub](https://github.com/NanYangLiHe/ai-toolkit/issues)*
